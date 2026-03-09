@@ -1,0 +1,161 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Nosotros",
+      "favorites": "Favoritos",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "cta": "Cotizar evento"
+  },
+  "Index": {
+    "badge": "Nueva experiencia de coctelería de autor",
+    "title": "La esencia de cada momento",
+    "subtitle": "Creamos atmósferas exclusivas a través de la mixología fina y un diseño de experiencias diseñado para eventos de alto perfil.",
+    "cta": "Solicitar presupuesto"
+  },
+    "Services": {
+    "badge": "Portafolio de Experiencias",
+    "mainTitle": "Curaduría After House",
+    "mixology": { "title": "Barra de Mixología", "description": "Coctelería de autor con destilados premium." },
+    "barman": { "title": "Servicio de Barman", "description": "Expertos en hospitalidad y técnica detrás de la barra." },
+    "glassware": { "title": "Alquiler de Cristalería", "description": "Diseño y elegancia en cada copa." },
+    "shots": { "title": "Carrito de Shots", "description": "Momentos de energía con presentaciones únicas." },
+    "foosball": { "title": "Mesa de Futbolito", "description": "Entretenimiento clásico con estética premium." },
+    "photobooth": { "title": "Photo Booth Experience", "description": "Captura recuerdos con calidad editorial." },
+    "catering": { "title": "Estación de Bocados", "description": "Gastronomía diseñada para maridar con tu evento." },
+    "invitations": { "title": "Invitaciones Digitales", "description": "La primera impresión minimalista y funcional." },
+    "dj": { "title": "DJ & Atmosphere", "description": "Curaduría sonora diseñada para cada fase de la noche." }
+  },
+  "About": {
+    "badge": "Nuestra Filosofía",
+    "title": "Creamos experiencias inolvidables para eventos",
+    "paragraph1": "After House es un estudio de experiencias para eventos enfocado en crear momentos memorables. Combinamos mixología, entretenimiento interactivo y servicios premium para elevar cada celebración.",
+    "paragraph2": "Diseñamos experiencias a la medida que conectan personas, generan energía y transforman cualquier evento en una noche inolvidable.",
+    "cta": "Conócenos"
+  },
+  "Favorites": {
+        "badge": "Cocteles que definen la experiencia",
+        "title": "Nuestros favoritos",
+        "subtitle": "Descubre la selección curada de mixología que ha transformado la energía de nuestras mejores noches.",
+        "cocktails": {
+        "valeria": { "name": "Valeria", "tags": "Fresco · Vibrante · Nocturno" },
+        "signature2": { "name": "Smoked Old Fashioned", "tags": "Intenso · Amaderado · Clásico" },
+        "signature3": { "name": "Botanical Spritz", "tags": "Ligero · Floral · Refrescante" },
+        "signature4": { "name": "Midnight Espresso", "tags": "Enérgico · Tostado · Profundo" },
+        "signature5": { "name": "Spicy Margarita", "tags": "Cítrico · Picante · Audaz" },
+        "signature6": { "name": "Golden Sour", "tags": "Aterciopelado · Dulce · Cítrico" },
+        "signature7": { "name": "Velvet Martini", "tags": "Elegante · Seco · Sofisticado" }
+        }
+    },
+  "Experience": {
+    "title": "La Experiencia AFTER HOUSE",
+    "description": "No solo servimos cocteles. Diseñamos ambientes, ritmo y momentos que se quedan. Cada barra se adapta al espacio, la noche y la energía del evento.",
+    "features": {
+      "item1": "Barra premium hecha a la medida",
+      "item2": "Coctelería fresca y bien ejecutada",
+      "item3": "Servicio que acompaña el ambiente",
+      "item4": "Experiencias que conectan personas"
+    },
+    "cta": "Cotiza tu evento"
+  },
+  "Parallax": {
+    "quote": "Elevamos la coctelería a un arte de inmersión total."
+  },
+  "BrandMarquee": {
+    "title": "Curaduría de Etiquetas Premium"
+  },
+  "Booking": {
+    "badge": "Vive la experiencia",
+    "title": "Cotiza tu evento",
+    "faqTitle": "Preguntas frecuentes",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "message": "Cuéntanos sobre tu evento...",
+        "submit": "Solicitar cotización",
+        "eventType": {
+          "label": "Tipo de evento",
+          "corporate": "Corporativo",
+          "wedding": "Boda / Social",
+          "private": "Fiesta Privada"
+        },
+        "serviceType": {
+            "label": "Servicio requerido",
+            "fullBar": "Barra Completa",
+            "mixology": "Mixología de Autor",
+            "tasting": "Cata / Experiencia Privada"
+        }
+      },
+      "faqs": {
+        "how": {
+          "q": "¿Cómo puedo solicitar una cotización formal?",
+          "a": "Una vez enviado el formulario, nuestro equipo se pondrá en contacto contigo en menos de 24 horas."
+        },
+        "payments": {
+          "q": "¿Qué métodos de pago aceptan?",
+          "a": "Aceptamos transferencias, tarjetas de crédito y pagos digitales seguros."
+        },
+        "booking": {
+          "q": "¿Cómo se aparta la fecha para mi evento?",
+          "a": "La fecha se bloquea oficialmente con un anticipo del 50% y la firma del contrato."
+        },
+        "coverage": {
+          "q": "Nuestra cobertura",
+          "a": "Operamos principalmente en CDMX y área metropolitana, con disponibilidad en toda la República."
+        }
+      }
+  },
+  "Testimonials": {
+  "items": {
+    "t1": {
+      "quote": "Una ejecución profesional, impecable y 100% recomendada en nuestro evento en el Campo de Golf Chapultepec. Gran experiencia para AMD.",
+      "author": "ALEJANDRO TORRES",
+      "title": "CEO, LUXE EVENTS",
+      "event": "CDMX"
+    },
+    "t2": {
+      "quote": "Cada detalle de la coctelería fue diseñado a la perfección. Nuestros invitados quedaron fascinados con la presentación y el sabor.",
+      "author": "MARÍA FERNANDA RÍOS",
+      "title": "FOUNDER, MfR STUDIO",
+      "event": "Boda · Hacienda San José"
+    },
+    "t3": {
+      "quote": "Cada detalle de la coctelería fue diseñado a la perfección. Nuestros invitados quedaron fascinados con la presentación y el sabor.",
+      "author": "MARÍA FERNANDA RÍOS",
+      "title": "FOUNDER, MfR STUDIO",
+      "event": "Boda · Hacienda San José"
+    }
+  }
+  },
+  "Footer": {
+    "brand": {
+      "description": "Elevamos la coctelería a un arte de inmersión total. Mixología de autor y servicio VIP para eventos extraordinarios."
+    },
+    "nav": {
+      "title": "Navegación",
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "favorites": "Favoritos",
+      "testimonials": "Testimonios"
+    },
+    "contact": {
+      "title": "Contacto Directo",
+      "whatsapp": "WhatsApp",
+      "phone": "+52 56 3769 9013",
+      "email": "contacto@afterhouse.com.mx"
+    },
+    "social": {
+      "title": "Síguenos"
+    },
+    "legal": {
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "terms": "Términos Legales"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Nuevo Dorado Champagne: más sobrio y elegante */
+  --color-after-gold: #C5A059;
+  --color-after-gold-light: #E2C792;
+  --color-after-black: #050505;
+  --color-after-white: #FFFFFF;
+
+  /* Tipografías oficiales */
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

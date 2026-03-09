@@ -1,0 +1,21 @@
+{
+  "Index": {
+    "badge": "New signature cocktail experience",
+    "title": "The essence of every moment",
+    "subtitle": "We create exclusive atmospheres through fine mixology and bespoke experience design for high-profile events.",
+    "cta": "Request a quote"
+  },
+"Services": {
+    "badge": "Portafolio de Experiencias",
+    "mainTitle": "Curaduría After House",
+    "mixology": { "title": "Barra de Mixología", "description": "Coctelería de autor con destilados premium." },
+    "barman": { "title": "Servicio de Barman", "description": "Expertos en hospitalidad y técnica detrás de la barra." },
+    "glassware": { "title": "Alquiler de Cristalería", "description": "Diseño y elegancia en cada copa." },
+    "shots": { "title": "Carrito de Shots", "description": "Momentos de energía con presentaciones únicas." },
+    "foosball": { "title": "Mesa de Futbolito", "description": "Entretenimiento clásico con estética premium." },
+    "photobooth": { "title": "Photo Booth Experience", "description": "Captura recuerdos con calidad editorial." },
+    "catering": { "title": "Estación de Bocados", "description": "Gastronomía diseñada para maridar con tu evento." },
+    "invitations": { "title": "Invitaciones Digitales", "description": "La primera impresión minimalista y funcional." },
+    "dj": { "title": "DJ & Atmosphere", "description": "Curaduría sonora diseñada para cada fase de la noche." }
+  }
+}
