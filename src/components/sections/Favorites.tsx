@@ -1,25 +1,32 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion, useMotionValue, animate } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
+// Tus 7 cócteles reales
 const cocktailKeys = [
-  'valeria', 'valeria', 'valeria', 'valeria', 'valeria', 'valeria', 'valeria'
+  'valeria', 'signature2', 'signature3', 'signature4', 'signature5', 'signature6', 'signature7'
 ];
 
-// Extendemos para el efecto infinito
+// LA MAGIA DEL INFINITO: Clonamos 3 al inicio y 3 al final para monitores ultra-anchos
+const numClones = 3;
 const extendedKeys = [
-  cocktailKeys[cocktailKeys.length - 1],
-  ...cocktailKeys,
-  cocktailKeys[0]
+  ...cocktailKeys.slice(-numClones), // Últimos 3
+  ...cocktailKeys,                   // Los 7 originales
+  ...cocktailKeys.slice(0, numClones) // Primeros 3
 ];
 
 export default function Favorites() {
   const t = useTranslations('Favorites');
+  const locale = useLocale();
+  const router = useRouter();
+  
   const carouselRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const x = useMotionValue(0); // Usamos MotionValue para un control preciso
+  const x = useMotionValue(0); 
   
   // Función para obtener medidas dinámicas
   const getLayout = () => {
@@ -29,15 +36,21 @@ export default function Favorites() {
     return { step: itemWidth + gap };
   };
 
-  // Inicializar posición
+  // Inicializar posición saltando los clones
   useEffect(() => {
     const { step } = getLayout();
-    x.set(-step);
-  }, []);
+    x.set(-numClones * step);
+  }, [x]);
 
-  const scrollToSlide = (index: number, animateScroll = true) => {
+  const scrollToSlide = (targetIndex: number, animateScroll = true) => {
     const { step } = getLayout();
-    const targetX = -(index + 1) * step;
+    
+    // Calculamos hacia dónde debe moverse físicamente
+    const targetX = -(targetIndex + numClones) * step;
+    
+    // Matemática pura: Aseguramos que el index visual siempre esté entre 0 y 6
+    const displayIndex = (targetIndex % cocktailKeys.length + cocktailKeys.length) % cocktailKeys.length;
+    setActiveIndex(displayIndex);
 
     if (animateScroll) {
       animate(x, targetX, {
@@ -45,91 +58,118 @@ export default function Favorites() {
         stiffness: 300,
         damping: 35,
         onComplete: () => {
-          // Lógica de Teletransportación Infinita
-          if (index >= cocktailKeys.length) {
-            x.set(-step);
-            setActiveIndex(0);
-          } else if (index < 0) {
-            x.set(-cocktailKeys.length * step);
-            setActiveIndex(cocktailKeys.length - 1);
+          // TELETRANSPORTACIÓN INVISIBLE
+          if (targetIndex >= cocktailKeys.length || targetIndex < 0) {
+            x.set(-(displayIndex + numClones) * step);
           }
         }
       });
     } else {
-      x.set(targetX);
+      x.set(-(displayIndex + numClones) * step);
     }
-    
-    // Actualizar index visual inmediatamente para los dots
-    const displayIndex = (index + cocktailKeys.length) % cocktailKeys.length;
-    setActiveIndex(displayIndex);
   };
 
   const nextSlide = () => scrollToSlide(activeIndex + 1);
   const prevSlide = () => scrollToSlide(activeIndex - 1);
 
-  // Autoplay
+  // Autoplay (Pausado si lo prefieres, pero funciona perfecto)
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+  const handleCardClick = (arrayIndex: number, isActive: boolean, key: string) => {
+    if (!isActive) {
+      // Si hacen clic en una tarjeta de los extremos, el carrusel fluye hacia ella
+      scrollToSlide(arrayIndex - numClones);
+    } else {
+      // Si hacen clic en la central, entran a ver la historia
+      router.push(`/${locale}/favorites/${key}`);
+    }
+  };
+
   return (
-    <section id="favorites" className="relative w-full bg-[#080808] py-24 lg:py-32 overflow-hidden font-inter ">
-      {/* Header igual al tuyo */}
-      <div className="w-full max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-20 mb-12 lg:mb-20 flex flex-col items-center text-center">
-        <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-8">
-          <div className="w-fit px-8 py-3 rounded-[30px] border border-after-gold/20 bg-after-black/60 backdrop-blur-xl text-after-gold text-[11px] tracking-[0.6em] uppercase font-light">
+    <section id="favorites" className="relative w-full bg-[#080808] py-24 lg:py-32 overflow-hidden font-inter selection:bg-after-gold selection:text-black">
+      
+      {/* HEADER PREMIUM */}
+      <div className="w-full max-w-[1600px] mx-auto px-6 lg:px-12 xl:px-20 mb-16 lg:mb-24 flex flex-col items-center text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true }} 
+          className="mb-8 flex justify-center w-full"
+        >
+          <div className="w-fit flex items-center justify-center px-6 py-2.5 lg:px-8 lg:py-3 rounded-[30px] border border-after-gold/20 bg-after-black/60 backdrop-blur-xl text-after-gold text-[9px] md:text-[10px] lg:text-[11px] tracking-[0.2em] lg:tracking-[0.6em] uppercase font-light text-center leading-normal">
             {t('badge')}
           </div>
         </motion.div>
         
-        <h2 className="font-playfair text-4xl md:text-7xl text-after-white italic leading-tight mb-6">
+        <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl xl:text-[6.5rem] text-white italic leading-none drop-shadow-2xl">
           {t('title')}
         </h2>
       </div>
 
       <div className="w-full relative">
-        {/* Contenedor Animado con Framer Motion */}
+        {/* CARRUSEL INFINITO */}
         <motion.div 
           ref={carouselRef}
           style={{ x }}
-          className="flex gap-6 lg:gap-12 px-[7.5vw] md:px-[30vw] lg:px-[36.5vw]"
+          className="flex items-center gap-6 lg:gap-12 px-[7.5vw] md:px-[30vw] lg:px-[36.5vw]"
         >
           {extendedKeys.map((key, index) => {
-            const isCloneStart = index === 0;
-            const isCloneEnd = index === extendedKeys.length - 1;
-            const realIndex = isCloneStart ? cocktailKeys.length - 1 : isCloneEnd ? 0 : index - 1;
+            // Calculamos cuál es la tarjeta real (0 a 6) sin importar cuántos clones haya
+            const realIndex = (index - numClones + cocktailKeys.length) % cocktailKeys.length;
             const isActive = activeIndex === realIndex;
 
             return (
               <motion.div
                 key={`${key}-${index}`}
-                onClick={() => scrollToSlide(realIndex)}
+                onClick={() => handleCardClick(index, isActive, key)}
                 className={`
-                  relative flex-shrink-0 cursor-pointer rounded-sm overflow-hidden
-                  w-[85vw] md:w-[40vw] lg:w-[28vw] xl:w-[26vw] aspect-[3/4]
-                  transition-all duration-700
-                  ${isActive ? 'scale-100 opacity-100' : 'scale-[0.85] opacity-40'}
+                  group relative flex-shrink-0 cursor-pointer rounded-sm overflow-hidden
+                  w-[85vw] md:w-[40vw] lg:w-[28vw] xl:w-[24vw] aspect-[3/4] lg:aspect-[4/5]
+                  transition-all duration-[800ms] ease-out
+                  ${isActive ? 'scale-100 opacity-100 shadow-2xl shadow-black' : 'scale-[0.85] opacity-30'}
                 `}
               >
-                <img 
+                <Image 
                   src={`/images/cocktails/${key}.webp`} 
                   alt={key}
-                  className={`w-full h-full object-cover ${isActive ? 'grayscale-0' : 'grayscale-[0.6]'}`}
+                  fill
+                  sizes="(max-width: 1024px) 85vw, 25vw"
+                  className={`object-cover transition-all duration-[1.5s] ease-out ${isActive ? 'grayscale-0 scale-105' : 'grayscale'}`}
                 />
                 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/90 via-transparent to-transparent opacity-80" />
+                {/* Velo Oscuro Degradado */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/40 to-transparent opacity-90 lg:opacity-80" />
 
-                <div className={`absolute bottom-6 left-1/2 -translate-x-1/2 w-[85%] bg-[#0a0a0a]/90 backdrop-blur-md border border-white/10 p-6 transition-all duration-700 ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-                  <h3 className="font-playfair text-xl text-after-gold mb-2">{t(`cocktails.${key}.name`)}</h3>
-                  <p className="font-inter text-white/80 text-xs tracking-widest uppercase">{t(`cocktails.${key}.tags`)}</p>
+                {/* Contenido Editorial flotante */}
+                <div className={`absolute bottom-0 left-0 w-full p-8 lg:p-10 flex flex-col items-center text-center transition-all duration-[800ms] ease-out ${isActive ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0 pointer-events-none'}`}>
+                  
+                  <p className="font-inter text-after-gold text-[9px] tracking-[0.4em] uppercase mb-4 opacity-80">
+                    {t(`cocktails.${key}.tags`)}
+                  </p>
+                  
+                  <h3 className="font-playfair text-3xl lg:text-4xl text-white italic mb-8">
+                    {t(`cocktails.${key}.name`)}
+                  </h3>
+
+                  {/* Botón CTA */}
+                  <div className="overflow-hidden">
+                    <div className="relative inline-flex justify-center items-center px-8 py-3 border border-after-gold/40 group-hover:bg-after-gold transition-all duration-500">
+                      <span className="font-inter text-after-gold group-hover:text-black text-[9px] tracking-[0.3em] uppercase font-medium transition-colors duration-500">
+                        Descubrir
+                      </span>
+                    </div>
+                  </div>
+
                 </div>
               </motion.div>
             );
           })}
         </motion.div>
 
-        {/* Controles (Mismos que los tuyos) */}
+        {/* CONTROLES */}
         <div className="flex flex-col items-center gap-6 mt-12">
           <div className="flex gap-4">
             <button onClick={prevSlide} className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:border-after-gold hover:text-after-gold text-white transition-all">
@@ -146,7 +186,7 @@ export default function Favorites() {
                 key={index}
                 onClick={() => scrollToSlide(index)}
                 className={`transition-all duration-500 rounded-full ${
-                  activeIndex === index ? 'w-8 h-1.5 bg-after-gold' : 'w-1.5 h-1.5 bg-white/20'
+                  activeIndex === index ? 'w-8 h-1.5 bg-after-gold' : 'w-1.5 h-1.5 bg-white/20 hover:bg-white/40'
                 }`}
               />
             ))}

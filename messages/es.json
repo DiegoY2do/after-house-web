@@ -16,18 +16,175 @@
     "subtitle": "Creamos atmósferas exclusivas a través de la mixología fina y un diseño de experiencias diseñado para eventos de alto perfil.",
     "cta": "Solicitar presupuesto"
   },
-    "Services": {
+"Services": {
     "badge": "Portafolio de Experiencias",
     "mainTitle": "Curaduría After House",
-    "mixology": { "title": "Barra de Mixología", "description": "Coctelería de autor con destilados premium." },
-    "barman": { "title": "Servicio de Barman", "description": "Expertos en hospitalidad y técnica detrás de la barra." },
-    "glassware": { "title": "Alquiler de Cristalería", "description": "Diseño y elegancia en cada copa." },
-    "shots": { "title": "Carrito de Shots", "description": "Momentos de energía con presentaciones únicas." },
-    "foosball": { "title": "Mesa de Futbolito", "description": "Entretenimiento clásico con estética premium." },
-    "photobooth": { "title": "Photo Booth Experience", "description": "Captura recuerdos con calidad editorial." },
-    "catering": { "title": "Estación de Bocados", "description": "Gastronomía diseñada para maridar con tu evento." },
-    "invitations": { "title": "Invitaciones Digitales", "description": "La primera impresión minimalista y funcional." },
-    "dj": { "title": "DJ & Atmosphere", "description": "Curaduría sonora diseñada para cada fase de la noche." }
+    "otherServicesSubtitle": "Otros servicios",
+    "otherServicesTitle": "Otros servicios",
+    "viewService": "Ver servicio",
+    "mixology": {
+      "title": "Barra de Mixología",
+      "description": "Coctelería de autor con destilados premium.",
+      "breadcrumb": "Inicio / Barra de mixología",
+      "subtitle": "Servicio Premium",
+      "mainDescription": "Nuestra barra de mixología es mucho más que un punto de despacho; es el epicentro de una experiencia sensorial diseñada para sorprender. Con una carta que supera los 50 cócteles, fusionamos técnicas de vanguardia con ingredientes de la más alta calidad para crear bebidas que son verdaderas obras de arte líquidas. Este servicio destaca por incluir creaciones exclusivas, como nuestro cóctel insignia, Valeria.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Contamos con paquetes de 50, 75, 100, 200, 300 y 500 cócteles. En cada pedido se pueden solicitar hasta 5 cócteles distintos, con opciones totalmente personalizadas según la temática y concepto de tu evento.",
+      "extraButton": "Ver menú",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Bodas", "XV Años", "Eventos Corporativos"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "barman": {
+      "title": "Servicio de Barman",
+      "description": "Expertos en hospitalidad y técnica detrás de la barra.",
+      "breadcrumb": "Inicio / Servicio de barman",
+      "subtitle": "Atención Exclusiva",
+      "mainDescription": "Llevamos la excelencia de la hospitalidad directamente a tu evento. Nuestros bartenders no solo dominan la técnica perfecta para servir destilados y preparar tragos, sino que aportan una presencia elegante y carismática que eleva el nivel de tu celebración.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Servicio profesional por horas (paquetes desde 5 horas). Incluye herramientas profesionales de barra (shakers, jiggers, cucharillas), asistencia en el cálculo de insumos y montaje de la estación de servicio.",
+      "extraButton": "",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Fiestas Privadas", "Activaciones de Marca", "Cumpleaños"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "glassware": {
+      "title": "Alquiler de Cristalería",
+      "description": "Diseño y elegancia en cada copa.",
+      "breadcrumb": "Inicio / Alquiler de cristalería",
+      "subtitle": "Detalles que Impactan",
+      "mainDescription": "La presentación visual de una bebida es el primer contacto con tus sentidos. Proveemos cristalería de importación y diseño de vanguardia que resalta los colores, aromas y texturas de cada preparación, aportando un nivel de sofisticación insuperable a tu evento.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Selección de copas globo, vasos Old Fashioned, copas coupe y vasos highball de cristal premium. Se entregan pulidos, esterilizados y listos para su uso. Incluye logística de entrega y recolección.",
+      "extraButton": "Ver catálogo",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Cenas de Gala", "Bodas", "Catas Privadas"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "shots": {
+      "title": "Carrito de Shots",
+      "description": "Momentos de energía con presentaciones únicas.",
+      "breadcrumb": "Inicio / Carrito de shots",
+      "subtitle": "El Clímax de la Noche",
+      "mainDescription": "Diseñado para ser el punto máximo de energía de tu celebración. Nuestras rondas de shots premium están creadas para sorprender visual y gustativamente a tus invitados, servidas con presentaciones espectaculares que encienden el ambiente en el momento exacto.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Carrito móvil iluminado, selección de destilados de alta gama, mixología en formato mini, cristalería especializada para shots y show de entrega por parte de nuestro equipo.",
+      "extraButton": "Ver menú",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Bodas (Hora Loca)", "Graduaciones", "Cumpleaños"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "foosball": {
+      "title": "Mesa de Futbolito",
+      "description": "Entretenimiento clásico con estética premium.",
+      "breadcrumb": "Inicio / Mesa de futbolito",
+      "subtitle": "Interacción Dinámica",
+      "mainDescription": "Redefinimos el entretenimiento clásico con un toque chic. Nuestras mesas de futbolito cuentan con un diseño que se integra de forma natural y sofisticada a la estética del evento, creando zonas de juego y convivencia sin perder la elegancia.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Alquiler de mesa de futbolito de diseño premium por toda la duración del evento. Incluye pelotas de repuesto, instalación, nivelación y recolección al finalizar.",
+      "extraButton": "",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Eventos Corporativos", "Cumpleaños", "Activaciones"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "photobooth": {
+      "title": "Photo Booth Experience",
+      "description": "Captura recuerdos con calidad editorial.",
+      "breadcrumb": "Inicio / Photo booth experience",
+      "subtitle": "Recuerdos Estéticos",
+      "mainDescription": "Captura la esencia de la noche con un estilo insuperable. Creamos espacios diseñados con iluminación fotográfica profesional y elementos estéticos para que tus invitados se lleven un recuerdo visual con la calidad y el sello de After House.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Cámara DSLR de alta resolución, iluminación de estudio, impresiones ilimitadas al instante, diseño de marco digital personalizado y galería web privada post-evento.",
+      "extraButton": "Ver muestra",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Bodas", "Graduaciones", "Lanzamientos de Marca"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "catering": {
+      "title": "Estación de Bocados",
+      "description": "Gastronomía diseñada para maridar con tu evento.",
+      "breadcrumb": "Inicio / Estación de bocados",
+      "subtitle": "Maridaje Perfecto",
+      "mainDescription": "Acompañamientos gastronómicos curados meticulosamente para armonizar con nuestra coctelería. Diseñamos estaciones de autor con bocadillos selectos que complementan y elevan la experiencia sensorial total de tus invitados.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Selección de canapés dulces y salados, tablas de quesos y charcutería fina. Montaje estético de la estación, loza premium y servicio de reabastecimiento durante el evento.",
+      "extraButton": "Ver menú",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Cócteles de Bienvenida", "Cenas Corporativas", "Bodas Boutique"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "invitations": {
+      "title": "Invitaciones Digitales",
+      "description": "La primera impresión minimalista y funcional.",
+      "breadcrumb": "Inicio / Invitaciones digitales",
+      "subtitle": "El Primer Contacto",
+      "mainDescription": "El impacto de un evento comienza desde el momento en que se anuncia. Conceptualizamos y diseñamos invitaciones digitales con un enfoque editorial y minimalista que anticipa perfectamente el nivel de exclusividad de tu celebración.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "Diseño personalizado adaptado a la temática del evento, formato optimizado para WhatsApp y correo electrónico, y opción de incluir enlaces de confirmación de asistencia (RSVP).",
+      "extraButton": "Ver muestra",
+      "customLink": "/gallery-demo",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Todo tipo de eventos", "Bodas", "Lanzamientos"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    },
+    "dj": {
+      "title": "DJ & Atmosphere",
+      "description": "Curaduría sonora diseñada para cada fase de la noche.",
+      "breadcrumb": "Inicio / DJ & atmosphere",
+      "subtitle": "Atmósfera Auditiva",
+      "mainDescription": "La música dicta el ritmo de la experiencia. Ofrecemos curaduría musical adaptada a la energía de cada etapa del evento, con talento profesional y equipo de sonido de alta fidelidad para envolver el espacio y mantener a los invitados en sintonía.",
+      "includesTitle": "¿Qué incluye este servicio?",
+      "includesDescription": "DJ profesional por hasta 8 horas de servicio. Cabina iluminada de diseño limpio, sistema de audio lineal de alta fidelidad, iluminación arquitectónica básica y juntas previas de curaduría musical.",
+      "extraButton": "",
+      "closingText": "Este servicio es sumamente versátil y se adapta tanto a reuniones íntimas como a grandes activaciones de marca o eventos corporativos. Más allá del entretenimiento, nuestras mesas se mantienen en excelente estado estético, integrándose perfectamente al diseño visual de tu evento.",
+      "sidebar": {
+        "idealForTitle": "Ideal para",
+        "idealForItems": ["Bodas", "XV Años", "Fiestas Privadas"],
+        "backButton": "Volver a servicios",
+        "ctaButton": "Cotizar por WhatsApp",
+        "followUs": "Síguenos:"
+      }
+    }
   },
   "About": {
     "badge": "Nuestra Filosofía",
@@ -40,14 +197,72 @@
         "badge": "Cocteles que definen la experiencia",
         "title": "Nuestros favoritos",
         "subtitle": "Descubre la selección curada de mixología que ha transformado la energía de nuestras mejores noches.",
+        "global": {
+            "breadcrumbIndex": "Favoritos",
+            "categoryLabel": "CATEGORÍA",
+            "baseLabel": "BASE",
+            "profileLabel": "TAGS",
+            "storyTitle": "Historia",
+            "followUs": "SÍGUENOS:",
+            "bookWhatsapp": "Cotizar Evento"
+        },
         "cocktails": {
-        "valeria": { "name": "Valeria", "tags": "Fresco · Vibrante · Nocturno" },
-        "signature2": { "name": "Smoked Old Fashioned", "tags": "Intenso · Amaderado · Clásico" },
-        "signature3": { "name": "Botanical Spritz", "tags": "Ligero · Floral · Refrescante" },
-        "signature4": { "name": "Midnight Espresso", "tags": "Enérgico · Tostado · Profundo" },
-        "signature5": { "name": "Spicy Margarita", "tags": "Cítrico · Picante · Audaz" },
-        "signature6": { "name": "Golden Sour", "tags": "Aterciopelado · Dulce · Cítrico" },
-        "signature7": { "name": "Velvet Martini", "tags": "Elegante · Seco · Sofisticado" }
+          "valeria": {
+            "name": "Valeria",
+            "category": "Cócteles de Autor",
+            "base": "Vodka y Gin",
+            "tags": "Fresco · Vibrante · Nocturno",
+            "story": "Este cóctel nace de un recuerdo que sigue presente. La fresa habla de la dulzura y de esa forma tan particular de suavizar los momentos. El vodka y el gin de fresa rinden homenaje a una fruta que la recuerda, a sus labios, que aún permanecen en la memoria. El kiwi y el limón aportan frescura, como la curiosidad, la forma de aprender, de bailar, de compartir canciones.\n\nCada fruto rojo guarda una tarde compartida, una risa, una madrugada detenida donde el mundo era solo de dos, justo antes de otro atardecer.\n\nUn cóctel que no olvida, que honra, que ama.\nY en caso de que se termine, recuerda... que aún quedan dos botellas de vino.",
+            "quote": "Un amor que sobrevive a la última copa."
+          },
+          "signature2": {
+            "name": "Smoked Old Fashioned",
+            "category": "Clásicos Reinventados",
+            "base": "Bourbon Premium",
+            "tags": "Intenso · Amaderado · Clásico",
+            "story": "Un tributo a la paciencia y al misterio. Este cóctel no se hace, se forja. El carácter intenso del bourbon reposado se encuentra con el amargor preciso de los bitters, creando una base sólida y atemporal.\n\nLa verdadera magia ocurre en la campana de humo. Maderas nobles quemadas lentamente envuelven la copa, dejando una neblina que perfuma el primer trago y transforma el ambiente de la mesa.\n\nPara los que saben que las mejores conversaciones ocurren cuando el hielo se derrite despacio.",
+            "quote": "El tiempo y la madera, convertidos en humo."
+          },
+          "signature3": {
+            "name": "Botanical Spritz",
+            "category": "Cócteles de Autor",
+            "base": "Gin Botánico",
+            "tags": "Ligero · Floral · Refrescante",
+            "story": "Como un jardín botánico que despierta a la medianoche. Este spritz es una celebración de lo ligero, diseñado para limpiar el paladar y elevar la energía de la noche sin saturarla.\n\nLas notas florales del gin se entrelazan con la efervescencia de un vino espumoso seco, coronado con hierbas frescas recién cortadas. Cada burbuja es un respiro de aire frío en medio de la pista de baile.\n\nElegante, sutil y peligrosamente fácil de beber.",
+            "quote": "La frescura de un jardín escondido en la penumbra."
+          },
+          "signature4": {
+            "name": "Midnight Espresso",
+            "category": "Cócteles Energéticos",
+            "base": "Vodka y Licor de Café",
+            "tags": "Enérgico · Tostado · Profundo",
+            "story": "Para aquellos que se niegan a que la noche termine. Una mezcla oscura y profunda que combina la pureza del vodka con el golpe estimulante de un espresso recién extraído.\n\nEl licor de café aporta ese toque de dulzura tostada que equilibra la fuerza de la cafeína. Al agitarse enérgicamente, se crea una corona de espuma densa y perfecta, decorada con tres granos de café que representan salud, riqueza y felicidad.\n\nEl catalizador perfecto para alargar la madrugada.",
+            "quote": "El latido oscuro que prolonga la noche."
+          },
+          "signature5": {
+            "name": "Spicy Margarita",
+            "category": "Cócteles de Autor",
+            "base": "Tequila Blanco",
+            "tags": "Cítrico · Picante · Audaz",
+            "story": "El equilibrio perfecto entre el fuego y la frescura. Esta interpretación rebelde de un clásico mexicano exige atención desde el primer roce de los labios con el borde de sal y tajín.\n\nEl agave puro del tequila blanco corta a través del jugo fresco de limón, mientras un sutil toque de licor de naranja suaviza la mezcla. Pero es la infusión de chile jalapeño la que deja un calor persistente, invitando inevitablemente al siguiente trago.\n\nHecho para paladares atrevidos y noches sin reglas.",
+            "quote": "Un brindis audaz donde el fuego encuentra su frescura."
+          },
+          "signature6": {
+            "name": "Golden Sour",
+            "category": "Clásicos Reinventados",
+            "base": "Whisky Blended",
+            "tags": "Aterciopelado · Dulce · Cítrico",
+            "story": "Oro líquido servido en una copa. Un estudio sobre la textura y el equilibrio. El carácter robusto del whisky es domesticado por la acidez brillante del cítrico recién exprimido y un jarabe simple elaborado en casa.\n\nEl batido en seco (dry shake) levanta una espuma densa y aterciopelada que acaricia el paladar antes de dejar paso a la complejidad del destilado. Unas gotas de amargo de Angostura sobre la espuma añaden el toque aromático final.\n\nUn clásico que exige ser tomado con calma y aprecio.",
+            "quote": "Textura de seda y alma de oro puro."
+          },
+          "signature7": {
+            "name": "Velvet Martini",
+            "category": "Cócteles de Autor",
+            "base": "Vodka Premium",
+            "tags": "Elegante · Seco · Sofisticado",
+            "story": "La elegancia en su estado más desnudo y puro. Sin jugos que lo enmascaren ni texturas gruesas que lo escondan; este martini es directo, gélido y absolutamente sofisticado.\n\nEnfriado hasta el punto de cristalización, el destilado adquiere una textura sedosa que resbala por el paladar. Un levísimo toque de vermouth seco y los aceites esenciales de un twist de limón terminan la obra.\n\nEs la bebida del confidente, del observador, del que entiende que menos es siempre más.",
+            "quote": "La sofisticación no necesita hacer ruido."
+          }
         }
     },
   "Experience": {
@@ -157,5 +372,106 @@
       "privacy": "Privacidad",
       "terms": "Términos Legales"
     }
+  },
+  "Globals": {
+    "whatsappUrl": "https://wa.me/5211234567890",
+    "social": {
+      "facebook": "https://www.facebook.com/AFTERHOUSEMX",
+      "instagram": "https://www.instagram.com/afterhouse_7/",
+      "tiktok": "https://www.tiktok.com/@after_house7",
+      "spotify": "https://open.spotify.com/user/...",
+      "whatsapp": "https://wa.me/525512345678?text=Hola,%20me%20gustaría%20cotizar%20un%20evento"
+    }
+  },
+  "AboutDetails": {
+  "breadcrumb": "Nuestra Historia",
+  "title": "Nosotros",
+  "subtitleLabel": "FILOSOFÍA",
+  "subtitle": "No servimos bebidas, creamos atmósferas.",
+  "storyText": "Nacimos con la idea de llevar la experiencia de la alta coctelería directamente al espacio de nuestros clientes. Entendimos que los mejores momentos no siempre ocurren en un bar abarrotado, sino en la intimidad de un evento diseñado a la medida.\n\nCada elemento que llevamos a tu evento ha sido seleccionado con rigor: desde la pureza del hielo y la cristalería pulida a mano, hasta los destilados premium y nuestros jarabes artesanales elaborados horas antes.\n\nPara nosotros, ser anfitriones es un arte. Nos encargamos de la energía, del ritmo y de cada detalle en la barra, para que tú te dediques a disfrutar tu propia celebración.",
+  "visionTitle": "EL ESTÁNDAR AFTER HOUSE",
+  "visionText": "La hospitalidad de lujo no se trata de impresionar mediante excesos, sino de hacer que cada invitado se sienta genuinamente especial a través de la atención impecable a los detalles mínimos.",
+  "ctaButton": "Hablemos de tu evento"
+},
+"AboutArt": {
+  "badge": "LA EXPERIENCIA",
+  "title": "La Obsesión por el Detalle",
+  "items": [
+    {
+      "title": "Hielo Cristalino",
+      "description": "Utilizamos exclusivamente 'Clear Ice' purificado. Su densidad extrema y corte perfecto evitan la dilución prematura, asegurando que tu destilado mantenga su carácter desde el primer hasta el último sorbo.",
+      "image": "/images/services/ice.jpg"
+    },
+    {
+      "title": "Ingredientes Botánicos",
+      "description": "Nuestros jarabes, infusiones y garnituras son elaborados artesanalmente horas antes de tu evento. No usamos conservadores, solo la expresión más pura de frutas, hierbas y especias.",
+      "image": "/images/services/botanicals.jpg"
+    },
+    {
+      "title": "Cristalería Templada",
+      "description": "Cada cóctel tiene una arquitectura térmica. Seleccionamos cristal de alta gama con el grosor y diseño exacto para potenciar los aromas y la temperatura de cada receta de autor.",
+      "image": "/images/services/glassware.jpg"
+    }
+  ]
+},
+"AboutTeam": {
+  "badge": "LOS CREADORES",
+  "title": "Mentes Maestras",
+  "description": "Detrás de cada barra de After House hay profesionales obsesionados con la hospitalidad y la alquimia líquida.",
+  "members": [
+    {
+      "name": "Nombre del Fundador 1",
+      "role": "Head Mixologist",
+      "bio": "Mi objetivo no es solo mezclar ingredientes, es encontrar el punto exacto donde el sabor detiene el tiempo.",
+      "image": "/images/services/barman.jpg"
+    },
+    {
+      "name": "Nombre del Fundador 2",
+      "role": "Operations Director",
+      "bio": "El lujo silencioso ocurre cuando el cliente no nota el esfuerzo, solo siente que la noche fluye perfectamente.",
+      "image": "/images/services/dj.jpg"
+    }
+  ]
+},
+  "GalleryDemo": {
+    "breadcrumb": "FOTOGRAFÍA Y DISEÑO",
+    "heroTitle1": "La esencia de cada",
+    "heroTitle2": "momento.",
+    "heroDesc": "Un evento sucede una sola vez. AFTER HOUSE conserva su atmósfera, su energía y sus emociones en una experiencia visual creada para volver a sentirse.",
+    "heroBtn": "VER GALERÍA",
+    
+    "infoTitle": "Relatos que no terminan",
+    "infoDesc": "AFTER HOUSE es un espacio creado para preservar experiencias. Cada evento se transforma en una galería sobria y cuidada, donde las imágenes no solo se muestran, sino que invitan a recordar lo vivido.",
+    
+    "steps": {
+      "badge": "CÓMO FUNCIONA",
+      "step1": {
+        "title": "Acceso controlado",
+        "desc": "Un acceso privado que reúne todos los recuerdos del evento en un solo lugar, disponible para quienes formaron parte de la experiencia."
+      },
+      "step2": {
+        "title": "Exploración limpia",
+        "desc": "Una navegación sin distracciones que permite recorrer cada imagen con calma, dejando que la atmósfera y los detalles hablen por sí solos."
+      },
+      "step3": {
+        "title": "Archivo permanente",
+        "desc": "Porque los eventos terminan, pero los recuerdos no. Cada galería permanece organizada y disponible para volver a ese momento cuando lo desees."
+      }
+    },
+    
+    "previewTitle1": "Momentos",
+    "previewTitle2": "destacados",
+    "previewLink": "Ver demo",
+    "btnExperiencia": "Ver Experiencia",
+    
+    "tag_coctel": "CÓCTELES",
+    "tag_boda": "BODAS",
+    "tag_festejos": "FESTEJOS",
+    "tag_encuentros": "ENCUENTROS",
+    
+    "ctaFinalTitle1": "Inmortaliza tu próxima",
+    "ctaFinalTitle2": "experiencia.",
+    "ctaFinalDesc": "Las experiencias que importan merecen ser recordadas. Asegura un espacio donde cada emoción pueda revivirse una y otra vez.",
+    "btnCotizar": "Cotizar"
   }
 }

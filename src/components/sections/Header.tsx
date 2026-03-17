@@ -52,8 +52,8 @@ export default function Header() {
         transition={{ duration: 0.35, ease: "easeInOut" }}
         className={`fixed top-0 left-0 w-full z-[100] transition-colors duration-500 font-inter ${
           scrolled || mobileMenuOpen
-            ? 'bg-[#080808]/80 backdrop-blur-md border-b border-white/5' 
-            : 'bg-transparent border-b border-transparent'
+            ? 'bg-[#080808]/80 backdrop-blur-md' 
+            : 'bg-transparent  border-transparent'
         }`}
       >
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12 h-20 md:h-28 flex items-center justify-between gap-4">

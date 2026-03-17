@@ -8,7 +8,7 @@ import Experience from "@/src/components/sections/Experience";
 import Testimonials from "@/src/components/sections/Testimonials";
 import BookingSection from "@/src/components/sections/BookingSection";
 import Footer from "@/src/components/sections/Footer";
-import BrandMarquee from "@/src/components/sections/BrandMarquee";
+
 
 export default function HomePage() {
   return (
@@ -21,7 +21,6 @@ export default function HomePage() {
       <ParallaxDivider/>
       <Experience/>
       <Testimonials/>
-      <BrandMarquee/>
       <BookingSection/>
       <Footer/>
     </main>

@@ -1,10 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function About() {
   const t = useTranslations('About');
+  const locale = useLocale();
 
   return (
     <section id="about" className="relative w-full bg-[#080808] py-24 lg:py-40 px-6 lg:px-12 xl:px-20 overflow-hidden font-inter ">
@@ -44,13 +46,16 @@ export default function About() {
             {t('paragraph2')}
           </p>
 
-          {/* Botón CTA consistente con el resto del sitio */}
-          <button className="group relative px-12 py-4 border border-after-gold/30 bg-transparent overflow-hidden transition-all duration-700 hover:border-after-gold">
+          {/* Botón CTA actualizado con Link para navegar a la página AboutDetails */}
+          <Link 
+            href={`/${locale}/about`}
+            className="group relative inline-flex items-center justify-center px-12 py-4 border border-after-gold/30 bg-transparent overflow-hidden transition-all duration-700 hover:border-after-gold"
+          >
             <span className="absolute inset-0 bg-after-gold translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[0.19,1,0.22,1]" />
             <span className="relative z-10 font-inter text-after-gold group-hover:text-after-black text-[11px] tracking-[0.4em] uppercase font-medium transition-colors duration-500">
               {t('cta')}
             </span>
-          </button>
+          </Link>
         </motion.div>
 
         {/* COLUMNA DERECHA: Imagen Editorial con Parallax sutil */}

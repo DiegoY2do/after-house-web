@@ -1,9 +1,10 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion, useMotionValue, animate } from 'framer-motion';
 import { useRef, useEffect, useState, useCallback } from 'react';
-import Image from 'next/image'; // <-- IMPORTANTE: Importamos el optimizador de Next.js
+import Image from 'next/image';
+import Link from 'next/link';
 
 const services = [
   { id: 'mixology', size: 'lg:col-span-8 lg:row-span-2' },
@@ -25,6 +26,7 @@ const extendedServices = [
 
 export default function Services() {
   const t = useTranslations('Services');
+  const locale = useLocale();
   const [activeIndex, setActiveIndex] = useState(0);
   
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -91,12 +93,13 @@ export default function Services() {
     return () => clearInterval(interval);
   }, [activeIndex, scrollToSlide]);
 
-const renderCard = (service: typeof services[0], index: number, isMobileClone = false) => (
-    <div
+  const renderCard = (service: typeof services[0], index: number, isMobileClone = false) => (
+    <Link
+      href={`/${locale}/services/${service.id}`}
       key={isMobileClone ? `clone-${service.id}-${index}` : service.id}
       className={`
         group relative overflow-hidden rounded-sm bg-[#0a0a0a] border border-white/5 
-        hover:border-after-gold/30 transition-colors duration-300 cursor-pointer
+        hover:border-after-gold/30 transition-colors duration-700 ease-out cursor-pointer block
         flex-shrink-0 transform-gpu
         w-[85vw] md:w-[45vw] lg:w-auto 
         h-[400px] md:h-[450px] lg:h-auto
@@ -110,27 +113,26 @@ const renderCard = (service: typeof services[0], index: number, isMobileClone = 
           fill
           sizes="(max-width: 1024px) 85vw, 50vw"
           priority={index < 3}
-          /* El cambio está aquí: quitamos grayscale y opacity-30 de la vista móvil y le agregamos el prefijo lg: */
-          className="object-cover lg:grayscale lg:opacity-30 lg:group-hover:grayscale-0 lg:group-hover:opacity-60 lg:group-hover:scale-105 transition-[filter,opacity,transform] duration-500 transform-gpu"
+          className="object-cover lg:grayscale lg:opacity-30 lg:group-hover:grayscale-0 lg:group-hover:opacity-70 lg:group-hover:scale-105 transition-all duration-1000 ease-[0.16,1,0.3,1] transform-gpu"
         />
       </div>
       
-      <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/40 to-transparent opacity-90 lg:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/40 to-transparent opacity-90 lg:group-hover:opacity-100 transition-opacity duration-700 ease-out pointer-events-none" />
       
       <div className="absolute inset-0 p-8 xl:p-10 flex flex-col justify-end z-20 pointer-events-none">
-        <div className="transform lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-500 ease-out">
+        <div className="transform lg:translate-y-6 lg:group-hover:translate-y-0 transition-transform duration-700 ease-[0.16,1,0.3,1]">
           <h3 className="font-playfair text-2xl lg:text-3xl xl:text-4xl text-after-white mb-0 italic">
             {t(`${service.id}.title`)}
           </h3>
           
           <div className="overflow-hidden">
-            <p className="font-inter text-after-white/70 text-sm xl:text-base font-light leading-relaxed mt-3 pt-3 border-t border-after-gold/20 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
+            <p className="font-inter text-after-white/70 text-sm xl:text-base font-light leading-relaxed mt-3 pt-3 border-t border-after-gold/20 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-700 ease-[0.16,1,0.3,1]">
               {t(`${service.id}.description`)}
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 
   return (
