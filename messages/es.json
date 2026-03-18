@@ -152,8 +152,8 @@
       "title": "Invitaciones Digitales",
       "description": "La primera impresión minimalista y funcional.",
       "breadcrumb": "Inicio / Invitaciones digitales",
-      "subtitle": "El Primer Contacto",
-      "mainDescription": "El impacto de un evento comienza desde el momento en que se anuncia. Conceptualizamos y diseñamos invitaciones digitales con un enfoque editorial y minimalista que anticipa perfectamente el nivel de exclusividad de tu celebración.",
+      "subtitle": "Relatos que no terminan",
+      "mainDescription": "AFTER HOUSE es un espacio creado para preservar experiencias. Cada evento se transforma en una galería sobria y cuidada, donde las imágenes no solo se muestran, sino que invitan a recordar lo vivido.",
       "includesTitle": "¿Qué incluye este servicio?",
       "includesDescription": "Diseño personalizado adaptado a la temática del evento, formato optimizado para WhatsApp y correo electrónico, y opción de incluir enlaces de confirmación de asistencia (RSVP).",
       "extraButton": "Ver muestra",
@@ -472,6 +472,27 @@
     "ctaFinalTitle1": "Inmortaliza tu próxima",
     "ctaFinalTitle2": "experiencia.",
     "ctaFinalDesc": "Las experiencias que importan merecen ser recordadas. Asegura un espacio donde cada emoción pueda revivirse una y otra vez.",
-    "btnCotizar": "Cotizar"
+    "btnCotizar": "Cotizar",
+
+    "upTitle1": "Comparte tu ",
+    "upTitle2": "perspectiva.",
+    "upDesc": "Sube tus fotos y videos. Ayúdanos a construir la memoria colectiva de este evento y forma parte de la galería oficial.",
+    
+    "upSelect": "SELECCIONA TUS ARCHIVOS",
+    "upDrag": "Arrastra aquí o haz clic (Max. 60s por video)",
+    "upProgress": "Subiendo...",
+    "upBtnSubir": "SUBIR ARCHIVOS",
+    
+    "btnGaleria": "VER GALERÍA",
+    
+    "modalSuccessTitle": "¡Momento compartido!",
+    "modalSuccessDesc": "Tu aporte ha sido procesado con éxito y ya forma parte de la colección.",
+    "btnSubirMas": "Subir más fotos",
+
+    "inviteOverline": "EXPERIENCIA INTERACTIVA",
+    "inviteTitle": "Inmortaliza cada",
+    "inviteTitleItalic": "perspectiva",
+    "inviteDesc": "No solo se trata de lo que nosotros capturamos, sino de lo que tus invitados viven. Descubre nuestra plataforma de carga en tiempo real y mira cómo se construye la memoria colectiva de tu evento.",
+    "inviteBtn": "PROBAR DEMO DE CARGA"
   }
 }
